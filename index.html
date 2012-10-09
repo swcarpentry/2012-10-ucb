@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>SWC Bootcamp Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le styles -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="logos/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="logos/software-carpentry-avatar-71x71.jpg">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="#schedule">Schedule</a></li>
+              <li><a href="#install">Installation</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="home" class="hero-unit">
+        <div>
+          <img src="logos/software-carpentry-with-hammer.svg" style="float: right; height: 60px;">
+          <h1>Location</h1>
+        </div>
+        <br>
+        <div class="row-fluid">
+          <div class="span6">
+            <p>Building 1 - Room 123</p>
+          </div>
+          <div class="span6" style="text-align: right;">
+            <p>October 20 - 21, 2012<br>
+               9:00 AM - 4:30 PM</p>
+          </div>
+        </div>
+      </div> <!-- hero-unit -->
+
+      <div id="schedule">
+        <h1>Schedule</h1>
+        <p class="muted" style="font-style: italic;">Subject to Change</p>
+        <div class="row-fluid"><strong>Day 1</strong></div>
+        <div class="row-fluid">
+          <div class="span2" style="text-align: right;">8:30 - 9:00:</div>
+          <div class="span4">Setup Help</div>
+        </div>
+        <div class="row-fluid">
+          <div class="span2" style="text-align: right;">9:00 - 12:00:</div>
+          <div class="span4">Bash Shell</div>
+        </div>
+        <div class="row-fluid">
+          <div class="span2" style="text-align: right;">12:00 - 1:00:</div>
+          <div class="span4">Lunch</div>
+        </div>
+        <div class="row-fluid">
+          <div class="span2" style="text-align: right;">1:00 - 4:30:</div>
+          <div class="span4">Python and Scientific Python</div>
+        </div>
+        <div class="row-fluid"><strong>Day 2</strong></div>
+        <div class="row-fluid">
+          <div class="span2" style="text-align: right;">9:00 - 12:00:</div>
+          <div class="span4">Version Control with Git</div>
+        </div>
+        <div class="row-fluid">
+          <div class="span2" style="text-align: right;">12:00 - 1:00:</div>
+          <div class="span4">Lunch</div>
+        </div>
+        <div class="row-fluid">
+          <div class="span2" style="text-align: right;">1:00 - 4:30:</div>
+          <div class="span4">Software Engineering with Python</div>
+        </div>
+      </div> <!-- schedule -->
+
+      <div id="install">
+        <h1>Installation</h1>
+        <h3>Virtual Machine</h3>
+        <p>To give everyone a consistent, pre-configured environment we
+           provide a Linux virtual machine. Install
+           <a href="https://www.virtualbox.org/">VirtualBox</a> and download
+           <a href="https://s3.amazonaws.com/SWC_JHU2012/swc_jhu2012_r03.ova">
+           this virtual machine image</a>. Load the VM into VirtualBox by
+           doing Import Appliance and loading the .ova file.</p>
+        <h3>Other Options</h3>
+        <p>Even if you plan to install things yourself please download
+           VirtualBox and the virtual machine as a backup. It can be
+           extremely difficult to get everything set up correctly.</p>
+        <div class="row-fluid">
+          <div class="span6">
+            <h4>Bash</h4>
+            <h5>Mac</h5>
+            <p>The default shell in Mac OS X is bash.</p>
+            <h5>Windows</h5>
+            <p>Install <a href="http://msysgit.github.com/">Git Bash</a>
+               following the instructions
+               <a href="https://openhatch.org/missions/windows-setup/install-git-bash">here</a>.</p>
+            <h5>Linux</h5>
+            <p>The default shell is usually Linux but if not you can
+               get to bash by opening a terminal and typing <code>bash</code>.</p>
+          </div>
+          <div class="span6">
+            <h4>Git</h4>
+            <h5>Mac</h5>
+            <p>Install
+               <a href="https://developer.apple.com/xcode/">Xcode</a>
+               and the command line tools (from the Download
+               preferences pane) or
+               <a href="http://code.google.com/p/git-osx-installer/downloads/list?can=3">install just git</a>.</p>
+            <h5>Windows</h5>
+            <p>Install <a href="http://msysgit.github.com/">Git Bash</a>
+               following the instructions
+               <a href="https://openhatch.org/missions/windows-setup/install-git-bash">here</a>.</p>
+            <h5>Linux</h5>
+            <p>If git is not already available on your machine you can try
+               to install it via your distro's package manager
+               (e.g. <code>apt-get</code>).</p>
+          </div>
+        </div> <!-- row1 -->
+
+        <div class="row-fluid">
+          <div class="span6">
+            <h4>Code Editor</h4>
+            <h5>Mac</h5>
+            <p>We recommend
+               <a href="http://www.barebones.com/products/textwrangler/">Text Wrangler</a> or
+               <a href="http://www.sublimetext.com/">Sublime Text</a>.</p>
+            <h5>Windows</h5>
+            <p><a href="http://notepad-plus-plus.org/">Notepad++</a> is a
+               popular free code editor for Windows.</p>
+            <h5>Linux</h5>
+            <p><a href="http://kate-editor.org/">Kate</a> is one option for
+               Linux users.</p>
+          </div>
+          <div class="span6">
+            <h4>Python</h4>
+            <p>To follow along you need
+               <a href="http://www.python.org">Python</a>
+               and the <a href="http://ipython.org">IPython</a> Notebook.
+               Installing these on your own can be a bit difficult so
+               we recommend just installing the
+               <a href="http://www.enthought.com/products/epd.php">
+                Enthought Python Distribution</a>, which comes in
+              <a href="http://www.enthought.com/products/epd_free.php">free</a>
+              and
+              <a href="http://www.enthought.com/products/edudownload.php">academic</a>
+              versions for Mac, Windows and Linux.</p>
+            <p>For other options check the Python4Astronomers page on
+               <a href="http://python4astronomers.github.com/installation/python_install.html">
+                installing scientific Python</a>.</p>
+          </div>
+        </div> <!-- row2 -->
+      </div> <!-- installation -->
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
+
